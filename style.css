@@ -48,6 +48,12 @@ nav li img {
     
 }
 
+nav li h1{
+    height: 50px; /* Increased size */
+    vertical-align: middle;
+    object-fit: contain;
+}
+
 nav a{
     height: 100%;
     padding: 0 30px;
@@ -109,6 +115,8 @@ nav li:first-child{
     .menu-button{
         display: block;
     }
+    
+    
 }
 @media(max-width: 400px){
     .sidebar{
