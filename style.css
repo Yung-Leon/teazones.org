@@ -218,8 +218,11 @@ nav li:first-child{
         }
 
         @media (max-width: 600px) {
+            nav li h1{
+                font-size: small;
+            }
     .our-services {
-        margin-top: 160%; 
+        margin-top: 165%; 
     }
     .container {
         margin-top: 10%; 
