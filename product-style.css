@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98.8vw;
+    height: 70vh;
+    z-index: -1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+
+}
+
+nav{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+}
+
+nav li img {
+    height: 120px; /* Increased size */
+    vertical-align: middle;
+    object-fit: contain;
+    
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: large;
+}
+
+nav a:hover{
+    color: green;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav li:first-child{
+    margin-right: auto;
+    height: 50px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255 , 255, 255, 0.2);
+    box-shadow: -10px 0 10px rgba(0 , 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+}
+
+.sidebar li{
+    max-width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+    color: #000;
+}
+.sidebar a:hover{
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    
+    
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+.container h1{
+    margin-top: 50px;
+    color: green;
+    display: flex;
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: absolute;
+    top: 70%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 80%; 
+    z-index: 10; 
+}
+
+.column {
+    background-color: rgba(14, 221, 66, 0.815); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    flex: 1; 
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out;
+    }
+
+.column:hover {
+    transform: scale(1.05); 
+}
+
+
+@media (max-width: 800px) {
+    .columns {
+        flex-direction: column; 
+        top: 60%; 
+    }
+}
+
+.container {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            
+        }
+        .footer h3 {
+            margin-bottom: 0.5em;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .our-services {
+            margin-top: 30%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .our-services h2 {
+            color: #008000;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .services-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .services-list li {
+            background-color: white;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        .services-list li strong {
+            color: #006400; 
+            display: block;
+            margin-bottom: 0.5em;
+        }
+
+        @media (max-width: 600px) {
+    .our-services {
+        margin-top: 150%; 
+    }
+    .container {
+        margin-top: 10%; 
+    .columns {
+        flex-direction: column; 
+    }
+}
+
+        }
