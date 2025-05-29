@@ -116,6 +116,9 @@ nav li:first-child{
     .sidebar{
         width: 100%;
     }
+    nav li h1{
+        font-size: small;
+    }
 }
 
 .container h1{
