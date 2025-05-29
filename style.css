@@ -116,8 +116,9 @@ nav li:first-child{
     .sidebar{
         width: 100%;
     }
-    nav li h1{
+    nav li h1 {
         font-size: small;
+    
     }
 }
 
@@ -159,7 +160,7 @@ nav li:first-child{
 @media (max-width: 800px) {
     .columns {
         flex-direction: column; 
-        top: 60%; 
+        top: 80%; 
     }
 }
 
@@ -218,7 +219,7 @@ nav li:first-child{
 
         @media (max-width: 600px) {
     .our-services {
-        margin-top: 150%; 
+        margin-top: 155%; 
     }
     .container {
         margin-top: 10%; 
